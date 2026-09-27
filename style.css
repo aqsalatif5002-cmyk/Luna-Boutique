@@ -1,0 +1,187 @@
+/* This is the main styling of the website */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lavenderblush;
+    color: black;
+}
+
+
+/* Header */
+
+header {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* Navigation bar */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero Section */
+
+.hero {
+    text-align: center;
+    padding: 70px;
+    background-color: mistyrose;
+}
+
+.hero h2 {
+    font-size: 35px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.hero a {
+    background-color: palevioletred;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+
+/* About Section */
+
+.about {
+    text-align: center;
+    padding: 50px;
+}
+
+.about h2 {
+    font-size: 30px;
+}
+
+
+/* Collection Section */
+
+.collection {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+
+/* Product cards */
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product {
+    width: 250px;
+    padding: 20px;
+    margin-top: 25px;
+    background-color: lavenderblush;
+    border: 1px solid lightgray;
+}
+
+.product img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product h3 {
+    color: palevioletred;
+}
+
+
+/* Services Section */
+
+.services {
+    text-align: center;
+    padding: 50px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service {
+    width: 250px;
+    padding: 20px;
+    margin-top: 25px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+
+/* Contact Section */
+
+.contact {
+    text-align: center;
+    padding: 50px;
+    background-color: mistyrose;
+}
+
+form {
+    width: 350px;
+    margin: auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: palevioletred;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: mediumvioletred;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
