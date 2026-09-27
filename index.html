@@ -3,18 +3,20 @@
 
 <head>
     <title>Luna Boutique</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    
+    <!-- Header -->
     <header>
 
         <h1>Luna Boutique</h1>
 
         <p>Elegance in every outfit</p>
 
-        
+        <!-- Navigation -->
         <nav>
             <a href="#">Home</a>
             <a href="#">About</a>
@@ -26,8 +28,8 @@
     </header>
 
 
-    
-    <section>
+    <!-- Hero Section -->
+    <section class="hero">
 
         <h2>Elegance in Every Outfit</h2>
 
@@ -41,8 +43,8 @@
     </section>
 
 
-    
-    <section>
+    <!-- About Section -->
+    <section class="about">
 
         <h2>About Luna Boutique</h2>
 
@@ -55,24 +57,25 @@
 
         <p>
             Our collection includes carefully selected
-            outfits for casual wear, parties and special
-            occasions.
+            outfits for casual wear, parties and special occasions.
         </p>
 
     </section>
 
 
-    
-    <section>
+    <!-- Collection Section -->
+    <section class="collection">
 
         <h2>Our Collection</h2>
 
-        <div>
+        <div class="products">
 
-            
-            <div>
 
-                <img src="images/dress1.jpg" alt="Velvet Evening Dress">
+            <!-- Product 1 -->
+            <div class="product">
+
+                <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80"
+                     alt="Velvet Evening Dress">
 
                 <h3>Velvet Evening Dress</h3>
 
@@ -85,10 +88,11 @@
             </div>
 
 
-            
-            <div>
+            <!-- Product 2 -->
+            <div class="product">
 
-                <img src="images/dress2.jpg" alt="Embroidered Lawn Suit">
+                <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=500&q=80"
+                     alt="Embroidered Lawn Suit">
 
                 <h3>Embroidered Lawn Suit</h3>
 
@@ -101,10 +105,11 @@
             </div>
 
 
-            
-            <div>
+            <!-- Product 3 -->
+            <div class="product">
 
-                <img src="images/dress3.jpg" alt="Party Wear Maxi">
+                <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=500&q=80"
+                     alt="Party Wear Maxi">
 
                 <h3>Party Wear Maxi</h3>
 
@@ -116,87 +121,101 @@
 
             </div>
 
+
         </div>
 
     </section>
-    
-<section>
 
-    <h2>Our Services</h2>
 
-    <div>
+    <!-- Services Section -->
+    <section class="services">
 
-        <div>
-            <h3>Custom Stitching</h3>
-            <p>
-                Get your favorite outfits stitched
-                according to your style and measurements.
-            </p>
+        <h2>Our Services</h2>
+
+        <div class="service-list">
+
+            <div class="service">
+
+                <h3>Custom Stitching</h3>
+
+                <p>
+                    Get your favorite outfits stitched
+                    according to your style and measurements.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>Personal Styling</h3>
+
+                <p>
+                    Get fashion advice to choose the perfect
+                    outfit for your special occasion.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>Home Delivery</h3>
+
+                <p>
+                    Enjoy convenient delivery of your
+                    favorite outfits to your doorstep.
+                </p>
+
+            </div>
+
         </div>
 
-
-        <div>
-            <h3>Personal Styling</h3>
-            <p>
-                Get fashion advice to choose the perfect
-                outfit for your special occasion.
-            </p>
-        </div>
+    </section>
 
 
-        <div>
-            <h3>Home Delivery</h3>
-            <p>
-                Enjoy convenient delivery of your
-                favorite outfits to your doorstep.
-            </p>
-        </div>
+    <!-- Contact Section -->
+    <section class="contact">
 
-    </div>
+        <h2>Contact Us</h2>
 
-</section>
+        <p>
+            Have a question or want to place an order?
+            Get in touch with us.
+        </p>
+
+        <form>
+
+            <label for="name">Name:</label>
+
+            <input type="text" id="name" name="name">
 
 
-<section>
+            <label for="email">Email:</label>
 
-    <h2>Contact Us</h2>
+            <input type="email" id="email" name="email">
 
-    <p>
-        Have a question or want to place an order?
-        Get in touch with us.
-    </p>
 
-    <form>
+            <label for="message">Message:</label>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+            <textarea id="message" name="message" rows="5"></textarea>
 
-        <br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+            <button type="submit">Send Message</button>
 
-        <br><br>
+        </form>
 
-        <label for="message">Message:</label>
-        <br>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+    </section>
 
-        <br><br>
 
-        <button type="submit">Send Message</button>
+    <!-- Footer -->
+    <footer>
 
-    </form>
+        <p> 2026 Luna Boutique. All Rights Reserved.</p>
 
-</section>
+        <p>Follow us on social media</p>
 
-<footer>
-
-    <p> 2026 Luna Boutique. All Rights Reserved.</p>
-
-    <p>Follow us on social media</p>
-
-</footer>
+    </footer>
 
 
 </body>
