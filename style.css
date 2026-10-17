@@ -1,4 +1,4 @@
-/* Main styling */
+/* Main Styling */
 
 * {
     box-sizing: border-box;
@@ -79,7 +79,7 @@ nav a:hover {
     font-size: 30px;
 }
 
-/* Collection Section */
+/* Collection */
 
 .collection {
     text-align: center;
@@ -135,7 +135,7 @@ nav a:hover {
     border: 1px solid lightgray;
 }
 
-/* Contact Section */
+/* Contact */
 
 .contact {
     text-align: center;
@@ -183,9 +183,43 @@ footer {
     padding: 20px;
 }
 
-/* Mobile Responsive Design */
+/* Tablet View */
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 521px) and (max-width: 820px) {
+
+    .products,
+    .service-list {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product,
+    .service {
+        width: 42%;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .about,
+    .collection,
+    .services,
+    .contact {
+        padding: 35px 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 520px) {
 
     header {
         padding: 20px 10px;
@@ -201,14 +235,13 @@ footer {
 
     nav {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         gap: 8px;
     }
 
     nav a {
-        margin: 3px;
-        font-size: 13px;
+        margin: 5px;
     }
 
     .hero {
@@ -238,7 +271,7 @@ footer {
     .service-list {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
     }
 
     .product,
@@ -251,41 +284,14 @@ footer {
     .product img {
         height: auto;
         aspect-ratio: 3 / 4;
-        object-fit: cover;
     }
 
     form {
         width: 100%;
-        max-width: 350px;
     }
 
     footer {
         padding: 20px 10px;
         font-size: 13px;
-    }
-}
-
-/* Tablet Responsive Design */
-
-@media screen and (min-width: 601px) and (max-width: 900px) {
-
-    .products,
-    .service-list {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .product,
-    .service {
-        width: 42%;
-    }
-
-    .collection,
-    .services {
-        padding: 35px 20px;
-    }
-
-    .hero {
-        padding: 50px 20px;
     }
 }
