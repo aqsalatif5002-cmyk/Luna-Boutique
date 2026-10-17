@@ -1,4 +1,8 @@
-/* This is the main styling of the website */
+/* Main styling */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -6,7 +10,6 @@ body {
     background-color: lavenderblush;
     color: black;
 }
-
 
 /* Header */
 
@@ -25,21 +28,164 @@ header p {
     font-size: 18px;
 }
 
+/* Navigation */
 
-/* Navigation bar */
+nav {
+    margin-top: 20px;
+}
 
-nav {/* Mobile Responsive Design */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+
+.hero {
+    text-align: center;
+    padding: 70px;
+    background-color: mistyrose;
+}
+
+.hero h2 {
+    font-size: 35px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: palevioletred;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+/* About Section */
+
+.about {
+    text-align: center;
+    padding: 50px;
+}
+
+.about h2 {
+    font-size: 30px;
+}
+
+/* Collection Section */
+
+.collection {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+/* Product Cards */
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product {
+    width: 250px;
+    padding: 20px;
+    margin-top: 25px;
+    background-color: lavenderblush;
+    border: 1px solid lightgray;
+}
+
+.product img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product h3 {
+    color: palevioletred;
+}
+
+/* Services */
+
+.services {
+    text-align: center;
+    padding: 50px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service {
+    width: 250px;
+    padding: 20px;
+    margin-top: 25px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+/* Contact Section */
+
+.contact {
+    text-align: center;
+    padding: 50px;
+    background-color: mistyrose;
+}
+
+form {
+    width: 350px;
+    max-width: 100%;
+    margin: auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: palevioletred;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: mediumvioletred;
+}
+
+/* Footer */
+
+footer {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive Design */
 
 @media screen and (max-width: 600px) {
-
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
 
     header {
         padding: 20px 10px;
@@ -54,7 +200,6 @@ nav {/* Mobile Responsive Design */
     }
 
     nav {
-        margin-top: 15px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -104,7 +249,6 @@ nav {/* Mobile Responsive Design */
     }
 
     .product img {
-        width: 100%;
         height: auto;
         aspect-ratio: 3 / 4;
         object-fit: cover;
@@ -115,11 +259,6 @@ nav {/* Mobile Responsive Design */
         max-width: 350px;
     }
 
-    input,
-    textarea {
-        width: 100%;
-    }
-
     footer {
         padding: 20px 10px;
         font-size: 13px;
@@ -128,8 +267,7 @@ nav {/* Mobile Responsive Design */
 
 /* Tablet Responsive Design */
 
-@media screen and (min-width: 601px)
-and (max-width: 900px) {
+@media screen and (min-width: 601px) and (max-width: 900px) {
 
     .products,
     .service-list {
@@ -150,220 +288,4 @@ and (max-width: 900px) {
     .hero {
         padding: 50px 20px;
     }
-}
-    margin-top: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-
-/* Hero Section */
-
-.hero {
-    text-align: center;
-    padding: 70px;
-    background-color: mistyrose;
-}
-
-.hero h2 {
-    font-size: 35px;
-}
-
-.hero p {
-    font-size: 18px;
-}
-
-.hero a {
-    background-color: palevioletred;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-}
-
-
-/* About Section */
-
-.about {
-    text-align: center;
-    padding: 50px;
-}
-
-.about h2 {
-    font-size: 30px;
-}
-
-
-/* Collection Section */
-
-.collection {
-    text-align: center;
-    padding: 50px;
-    background-color: white;
-}
-
-
-/* Product cards */
-
-.products {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.product {
-    width: 250px;
-    padding: 20px;
-    margin-top: 25px;
-    background-color: lavenderblush;
-    border: 1px solid lightgray;
-}
-
-.product img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.product h3 {
-    color: palevioletred;
-}
-
-
-/* Services Section */
-
-.services {
-    text-align: center;
-    padding: 50px;
-}
-
-.service-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.service {
-    width: 250px;
-    padding: 20px;
-    margin-top: 25px;
-    background-color: white;
-    border: 1px solid lightgray;
-}
-
-
-/* Contact Section */
-
-.contact {
-    text-align: center;
-    padding: 50px;
-    background-color: mistyrose;
-}
-
-form {
-    width: 350px;
-    margin: auto;
-    text-align: left;
-}
-
-label {
-    display: block;
-    margin-top: 15px;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    box-sizing: border-box;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: palevioletred;
-    color: white;
-    border: none;
-}
-
-button:hover {
-    background-color: mediumvioletred;
-}
-
-
-/* Footer */
-
-footer {
-    background-color: palevioletred;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Responsive design for mobile screens */
-
-@media screen and (max-width: 600px) {
-
-    .products {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product {
-        width: 250px;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    .service-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service {
-        width: 250px;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    .hero {
-        padding: 30px 15px;
-    }
-
-    .hero h2 {
-        font-size: 25px;
-    }
-
-    .about,
-    .collection,
-    .services,
-    .contact {
-        padding: 25px 15px;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 8px;
-    }
-
-    form {
-        width: 100%;
-    }
-
-    input,
-    textarea {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
 }
