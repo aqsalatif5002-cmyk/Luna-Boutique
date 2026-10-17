@@ -191,17 +191,35 @@ footer {
 @media screen and (max-width: 600px) {
 
     .products {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .product {
+        width: 250px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
     .service-list {
+        display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .service {
+        width: 250px;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .hero {
         padding: 30px 15px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
     }
 
     .about,
@@ -218,6 +236,12 @@ footer {
 
     form {
         width: 100%;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
     }
 
 }
