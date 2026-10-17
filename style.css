@@ -28,7 +28,129 @@ header p {
 
 /* Navigation bar */
 
-nav {
+nav {/* Mobile Responsive Design */
+
+@media screen and (max-width: 600px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a {
+        margin: 3px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 35px 15px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .about,
+    .collection,
+    .services,
+    .contact {
+        padding: 30px 15px;
+    }
+
+    .about h2 {
+        font-size: 24px;
+    }
+
+    .products,
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product,
+    .service {
+        width: 100%;
+        max-width: 350px;
+        margin-top: 10px;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+    }
+
+    form {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px 10px;
+        font-size: 13px;
+    }
+}
+
+/* Tablet Responsive Design */
+
+@media screen and (min-width: 601px)
+and (max-width: 900px) {
+
+    .products,
+    .service-list {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product,
+    .service {
+        width: 42%;
+    }
+
+    .collection,
+    .services {
+        padding: 35px 20px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+}
     margin-top: 20px;
 }
 
